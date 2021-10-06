@@ -6,7 +6,6 @@ ALl-in-one Wrapper for DFU-Programmer
 
 #include <iostream>
 #include <string>
-#include <array>
 #include <stdio.h>
 
 int main(int argc, char **argv) //command-line arguments
@@ -21,11 +20,20 @@ int main(int argc, char **argv) //command-line arguments
     std::string mcu = "atmega32u4";   //mcu-type, constant for now
     std::string programmer = argv[1]; //convert the strings from the command-line (C-Style char arrays) to std::string's, just easier to work with
     std::string hexPath = argv[2];
+    std::string command;
     programmer = "\"" + programmer + "\" ";
 
-    eraseStatus = system((programmer + mcu + " erase --force").c_str()); //execute the three flashing commands
-    flashStatus = system((programmer + mcu + " flash " + hexPath + ".hex").c_str());
-    startStatus = system((programmer + mcu + " start").c_str());
+    command = programmer + mcu + " erase --force"; //execute the three flashing commands
+    std::cerr << "Executing : \"" << command << "\" ->" << std::endl;
+    eraseStatus = system(command.c_str());
+
+    command = programmer + mcu + " flash " + hexPath + ".hex";
+    std::cerr << "Executing : \"" << command << "\" ->" << std::endl;
+    flashStatus = system(command.c_str());
+
+    command = programmer + mcu + " start";
+    std::cerr << "Executing : \"" << command << "\" ->" << std::endl;
+    startStatus = system(command.c_str());
 
     return eraseStatus + flashStatus + startStatus; //return sum of return values, should be 0
 }
