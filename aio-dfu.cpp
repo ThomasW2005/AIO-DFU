@@ -1,6 +1,6 @@
 /*
 Thomas Weichhart 3AHELS
-06.10.2021 v2.0
+06.10.2021 v2.1
 ALl-in-one Wrapper for DFU-Programmer
 */
 
