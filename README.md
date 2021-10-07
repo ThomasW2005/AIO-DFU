@@ -6,7 +6,7 @@ This is a Tool designed for Code::Blocks to help you Upload your hex file to a M
 
 - [Code::Blocks](https://www.codeblocks.org/downloads/binaries) 
 - [DFU-Programmer](https://sourceforge.net/projects/dfu-programmer/files/)
-- [WinAVR](https://sourceforge.net/projects/winavr/) (optional, not required)
+- [WinAVR](https://sourceforge.net/projects/winavr/) (not required, used to generate .hex file)
 
 ## Installing
 
