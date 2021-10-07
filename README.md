@@ -54,9 +54,9 @@ You can test it by either Selecting the Tool under Tools or pressing the keyboar
 
 Feel free to explore and modify the source code
 
-1. Clone this repo: ```$git clone  https://github.com/ThomasW2005/AIO-DFU.git```
+1. Clone this repo: ```$ git clone  https://github.com/ThomasW2005/AIO-DFU.git```
 
-2. Compile with GCC: ```g++ aio-dfu.cpp -o aio-dfu.exe -O3 -Wall```
+2. Compile with GCC: ```$ g++ aio-dfu.cpp -o aio-dfu.exe -O3 -Wall```
 
 ## Common Issues
 
