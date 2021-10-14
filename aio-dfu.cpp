@@ -12,7 +12,7 @@ int main(int argc, char **argv) //command-line arguments
 {
     if (argc != 3) //check if correct amount of arguments get passed
     {
-        std::cerr << "Invalid Arguments:\n\n\t1st Argument should be location of dfu-programmer.exe (including .exe)\n\t2nd Argument should be location of hex file (usually ${TARGET_OUTPUT_DIR}${PROJECT_NAME})\n\n\tFor Example: \"C:\\dfu-programmer-win-0.7.2\\dfu-programmer.exe\" ${TARGET_OUTPUT_DIR}${PROJECT_NAME}" << std::endl;
+        std::cerr << "AIO-DFU v2.2\nInvalid Arguments:\n\n\t1st Argument should be location of dfu-programmer.exe (including .exe)\n\t2nd Argument should be location of hex file (usually ${TARGET_OUTPUT_DIR}${PROJECT_NAME})\n\n\tFor Example: \"C:\\dfu-programmer-win-0.7.2\\dfu-programmer.exe\" ${TARGET_OUTPUT_DIR}${PROJECT_NAME}" << std::endl;
         return -1;
     }
 
