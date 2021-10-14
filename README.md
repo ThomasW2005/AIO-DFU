@@ -10,7 +10,7 @@ This is a Tool designed for Code::Blocks to help you Upload your hex file to a M
 
 ## Installing
 
-1. Download the AIO-DFU from the Releases tab or click [here](https://github.com/ThomasW2005/AIO-DFU/releases/latest)
+1. Download the AIO-DFU from the Releases tab or click [here](https://github.com/ThomasW2005/AIO-DFU/releases/latest/download/aio-dfu.exe)
 
 2. Save it somewhere (e.g "C:\Program Files (x86)\dfu-programmer-win-0.7.2\aio-dfu.exe")
 
